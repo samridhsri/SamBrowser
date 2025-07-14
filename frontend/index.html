@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Browser</title>
+  </head>
+  <body class="bg-gray-900 text-white h-screen overflow-hidden font-sans">
+
+    <div class="flex h-full w-full">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gray-800 p-4 flex flex-col justify-between">
+        <div>
+          <h1 class="text-2xl font-bold mb-4">Sam Browser</h1>
+          <button id="studyModeToggle" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 w-full mb-4">
+            Toggle Study Mode
+          </button>
+
+          <div class="mb-4">
+            <h2 class="text-sm uppercase tracking-wider text-gray-400">Pomodoro Timer</h2>
+            <div id="timer" class="text-3xl font-mono mt-2">25:00</div>
+            <div class="flex gap-2 mt-2">
+              <button id="startBtn" class="px-3 py-1 bg-green-600 rounded">Start</button>
+              <button id="resetBtn" class="px-3 py-1 bg-red-600 rounded">Reset</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main View -->
+      <main class="flex-1 bg-gray-950 p-4 overflow-auto">
+        <h2 class="text-xl font-semibold mb-2">Main Browser View</h2>
+        <p class="text-gray-400">This is where your webview/browser will go!</p>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
