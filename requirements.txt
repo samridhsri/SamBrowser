@@ -1,3 +1,0 @@
-PyQt6
-cefpython3
-pyqtwebengine
